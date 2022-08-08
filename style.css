@@ -1,0 +1,118 @@
+table {
+    border: 2px solid black;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 15px 0 ;
+    background: salmon;
+    margin: 0 auto;
+    font-size: x-large;
+}
+
+.tableRow {
+    color: blue ;
+}
+
+label, input,select {
+    font-size: x-large;
+    color: black;
+}
+
+select, #price, #foodName {
+    border: 3px solid black;
+    border-radius: 15px;
+    display: block;
+    margin:auto;
+}
+
+span {
+    font-size: x-large;
+    color: black;
+}
+
+#submit {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3px 20px;
+    background: turquoise;
+}
+
+form {
+    border: 5px double black;
+    border-radius: 15px;
+    padding: 20px 0;
+    margin: 0 150px 50px;
+    background: #0000ff63;
+}
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .svg-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  
+  body {
+    background: #fff;
+    color: #333;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+  }
+  
+  h3 {
+    font-weight: 400;
+  }
+  
+  header {
+    color: #fff;
+    padding-top: 10vw;
+    padding-bottom: 30vw;
+    text-align: center;
+    font-size: x-large;
+  }
+  
+  main {
+    background: linear-gradient(to bottom, #ffffff 0%, #dddee1 100%);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 10vh 0 80vh;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  
+    
+  }
+
+  .about {
+    padding: 5px 15px;
+    border: 2px solid black ;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0 0;
+    display: inline-block;
+    background: #0000ff63 ;
+  }
+  
+  footer {
+    background: #dddee1;
+    padding: 5vh 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  small {
+    font-weight: 1000px;
+    
+  }
+
+  .lorem {
+    text-align: center;
+    font-size: x-large;
+    line-height: 150%
+  }
