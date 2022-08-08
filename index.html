@@ -8,20 +8,24 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
+    <div class="svg-container">
+        <!-- I crated SVG with: https://codepen.io/anthonydugois/pen/mewdyZ -->
+        <svg viewbox="0 0 800 400" class="svg">
+          <path id="curve" fill="#50c6d8" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+          </path>
+        </svg>
+      </div>
+    
+      <header>
         <h1>Restaurant</h1>
-        <nav>
-            <a href="#">Google</a>
-            <a href="#">Facebook</a>
-            <a href="#">Github</a>
-        </nav>
-        <hr>
-    </header>
+        <h3>Here you are, scroll down.</h3>
+        <a class="about" href="./about.html">About Me</a>
+      </header>
     <main>
-        <form>
+        <form class="form">
             <label for="foodName">Food Name:</label>
             <input type="text" id="foodName">
-            <br><br>
+            <br><br><br>
             <label for="foodOptions">Choose type of your food:</label>
             <select name="food options" id="foodOptions">
                 <option value="">--Please choose an option--</option>
@@ -31,30 +35,31 @@
                 <option value="protein">Protein</option>
                 <option value="fat">Fat</option>
             </select>
-            <br><br>
+            <br><br><br>
             <label for="price">Price:</label>
             <input type="number" id="price">
-            JD
-            <br><br>
+            <span>JD</span>
+            <br><br><br>
             <input type="submit" id="submit" value="submit">
-            <br><br>
+            <br>
         </form>
         <table>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Price</th>
+            <tr class="tableRow">
+                <th>Food ID</th>
+                <th>Food Name</th>
+                <th>Food Type</th>
+                <th>Food Price</th>
             </tr>
         </table>
     </main>
     <hr>
-    <footer id="footer">
 
-        <a href="https://web.facebook.com/mohammad.alfayome.7/" target="blank">facebook</a>
-        <a href="https://github.com/mohammadalfayoume" target="blank">github</a>
-        <a href="https://www.linkedin.com/in/mohammad-alfayoume-194b531b3/" target="blank">linkedIn</a>
-        <p>Copyright&copy;</p>
+    <footer>
+
+        <p>&copy;Copyright</p>
+    <small>🕷 Wish you luck, <a href="https://web.facebook.com/mohammad.alfayome.7/">Facebook</a>.</small>
+    <small>🕷 Wish you luck, <a href="https://github.com/mohammadalfayoume">Github</a>.</small>
+    <small>🕷 Wish you luck, <a href="hhttps://www.linkedin.com/in/mohammad-alfayoume-194b531b3/">LinkedIn</a>.</small>
     </footer>
     <script src="./app.js"></script>
 </body>

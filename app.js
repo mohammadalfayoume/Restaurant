@@ -7,7 +7,6 @@ function Food(foodName,foodType,foodPrice) {
 
     allFood.push(this)
 }
-// console.log(allFood)
 
 let count=999;
 
@@ -18,7 +17,6 @@ Food.prototype.render = function() {
     return count;    
     }
     
-
     let table= document.getElementsByTagName('table');
 
     let row=document.createElement('tr')
@@ -36,17 +34,8 @@ Food.prototype.render = function() {
     let price=document.createElement('td')
     price.textContent=this.foodPrice
 
-    row.append(id,name,type,price)
-
-    
+    row.append(id,name,type,price)    
 }
-
-
-
-
-
-
-// let table=document.getElementsByTagName('table')
 
 let form=document.getElementsByTagName('form');
 form[0]=addEventListener('submit',handleSubmit)
@@ -61,18 +50,4 @@ function handleSubmit(event) {
 
     const addFood =new Food(foodName,options,price)
     addFood.render()
-
 }
-
-
-
-
-
-
-// const food1 =new Food('mansaf','rice',200)
-// let main= document.getElementsByTagName('main');
-
-
-
-
-
