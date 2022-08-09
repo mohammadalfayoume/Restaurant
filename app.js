@@ -2,11 +2,8 @@ let allFood=[];
 let count=999;
 
 
-function Food(foodName,foodType,foodPrice) {
-    this.foodId=function(){
-        count++
-        return count;    
-        }
+function Food(foodId,foodName,foodType,foodPrice) {
+    this.foodId=count++    
     this.foodName=foodName;
     this.foodType=foodType;
     this.foodPrice=foodPrice;
@@ -42,11 +39,12 @@ form[0]=addEventListener('submit',handleSubmit)
 
 function handleSubmit(event) {
     event.preventDefault();
+    let id=event.target.foodId.value;
     let foodName= event.target.foodName.value;
     let options= event.target.foodOptions.value;
     let price= event.target.price.value;
 
-    const addFood =new Food(foodName,options,price)
+    const addFood =new Food(id,foodName,options,price)
 
     // addFood.render()
 

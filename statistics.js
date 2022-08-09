@@ -1,12 +1,9 @@
 let allFood=[];
-let count=999;
+let count=1000;
 
 
-function Food(foodName,foodType,foodPrice) {
-    this.foodId=function(){
-        count++
-        return count;    
-        }
+function Food(foodId,foodName,foodType,foodPrice) {
+    this.foodId=count++
     this.foodName=foodName;
     this.foodType=foodType;
     this.foodPrice=foodPrice;
@@ -16,13 +13,14 @@ function Food(foodName,foodType,foodPrice) {
 
 Food.prototype.render = function() {
     
+    
     let table= document.getElementsByTagName('table');
 
     let row=document.createElement('tr')
     table[0].appendChild(row)
 
     let id=document.createElement('td')
-    id.textContent=this.foodId()
+    id.textContent=this.foodId
 
     let name=document.createElement('td')
     name.textContent=this.foodName
@@ -51,7 +49,7 @@ function getData(){
 
     if (arrData !== null){
         for (let i = 0; i < arrData.length; i++) {
-            new Food(arrData[i].foodName,arrData[i].foodType,arrData[i].foodPrice)
+            new Food(arrData[i].foodId,arrData[i].foodName,arrData[i].foodType,arrData[i].foodPrice)
             allFood[i].render()
         }
     }
