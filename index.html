@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="svg-container">
-        <svg viewbox="0 0 800 400" class="svg">
-          <path id="curve" fill="#50c6d8" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
-          </path>
-        </svg>
-      </div>
-    
-      <header>
-        <h1>Restaurant</h1>
-        <h3>Here you are, scroll down.</h3>
-        <a class="about" href="./statistics.html">Statistics</a>
-      </header>
+      <svg viewbox="0 0 800 400" class="svg">
+        <path
+          id="curve"
+          fill="#50c6d8"
+          d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z"
+        ></path>
+      </svg>
+    </div>
+
+    <header>
+      <h1>Restaurant</h1>
+      <h3>Here you are, scroll down.</h3>
+      <a class="statistics" href="./statistics.html">Statistics</a>
+    </header>
     <main>
-        <form class="form">
-            <input type="hidden" id="foodId">
-            <label for="foodName">Food Name:</label>
-            <input type="text" id="foodName">
-            <br><br><br>
-            <label for="foodOptions">Choose type of your food:</label>
-            <select name="food options" id="foodOptions">
-                <option value="">--Please choose an option--</option>
-                <option value="fruit and vegetables">Fruit and vegetables</option>
-                <option value="starchy food">Starchy food</option>
-                <option value="dairy">Dairy</option>
-                <option value="protein">Protein</option>
-                <option value="fat">Fat</option>
-            </select>
-            <br><br><br>
-            <label for="price">Price:</label>
-            <input type="number" id="price">
-            <span>JD</span>
-            <br><br><br>
-            <input type="submit" id="submit" value="submit">
-            <input type="reset" id="reset" value="reset">
-            <br>
-        </form>
-        <!-- <table>
+      <form class="form">
+        <input type="hidden" id="foodId" />
+        <label for="foodName">Food Name</label>
+        <input type="text" id="foodName" />
+        <br /><br /><br />
+        <label for="foodOptions">Choose type of your food</label>
+        <select name="food options" id="foodOptions">
+          <option value="">--Please choose an option--</option>
+          <option value="fruit and vegetables">Fruit and vegetables</option>
+          <option value="starchy food">Starchy food</option>
+          <option value="dairy">Dairy</option>
+          <option value="protein">Protein</option>
+          <option value="fat">Fat</option>
+        </select>
+        <br /><br /><br />
+        <label for="price">Price (JD)</label>
+        <input type="number" id="price" min="0" />
+        <br /><br /><br />
+        <input type="submit" id="submit" value="submit" />
+        <input type="reset" id="reset" value="reset" />
+        <br />
+      </form>
+      <!-- <table>
             <tr class="tableRow">
                 <th>Food ID</th>
                 <th>Food Name</th>
@@ -53,15 +55,26 @@
             </tr>
         </table> -->
     </main>
-    <hr>
+    <hr />
 
     <footer>
-
-        <p>&copy;Copyright</p>
-    <small>🕷 Wish you luck, <a href="https://web.facebook.com/mohammad.alfayome.7/">Facebook</a>.</small>
-    <small>🕷 Wish you luck, <a href="https://github.com/mohammadalfayoume">Github</a>.</small>
-    <small>🕷 Wish you luck, <a href="hhttps://www.linkedin.com/in/mohammad-alfayoume-194b531b3/">LinkedIn</a>.</small>
+      <p>&copy;Copyright</p>
+      <small
+        >🕷 Wish you luck,
+        <a href="https://web.facebook.com/mohammad.alfayome.7/">Facebook</a
+        >.</small
+      >
+      <small
+        >🕷 Wish you luck,
+        <a href="https://github.com/mohammadalfayoume">Github</a>.</small
+      >
+      <small
+        >🕷 Wish you luck,
+        <a href="hhttps://www.linkedin.com/in/mohammad-alfayoume-194b531b3/"
+          >LinkedIn</a
+        >.</small
+      >
     </footer>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
