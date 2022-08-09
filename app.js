@@ -1,18 +1,17 @@
-let allFood=[];
-let count=999;
+let allFood = [];
+let count = 999;
 
+function Food(foodId, foodName, foodType, foodPrice) {
+  this.foodId = count++;
+  this.foodName = foodName;
+  this.foodType = foodType;
+  this.foodPrice = foodPrice;
 
-function Food(foodId,foodName,foodType,foodPrice) {
-    this.foodId=count++    
-    this.foodName=foodName;
-    this.foodType=foodType;
-    this.foodPrice=foodPrice;
-
-    allFood.push(this)
+  allFood.push(this);
 }
 
 // Food.prototype.render = function() {
-    
+
 //     let table= document.getElementsByTagName('table');
 
 //     let row=document.createElement('tr')
@@ -30,38 +29,36 @@ function Food(foodId,foodName,foodType,foodPrice) {
 //     let price=document.createElement('td')
 //     price.textContent=this.foodPrice
 
-//     row.append(id,name,type,price) 
-    
+//     row.append(id,name,type,price)
+
 // }
 
-let form=document.getElementsByTagName('form');
-form[0]=addEventListener('submit',handleSubmit)
+let form = document.getElementsByTagName("form");
+form[0] = addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
-    event.preventDefault();
-    let id=event.target.foodId.value;
-    let foodName= event.target.foodName.value;
-    let options= event.target.foodOptions.value;
-    let price= event.target.price.value;
+  event.preventDefault();
+  let id = event.target.foodId.value;
+  let foodName = event.target.foodName.value;
+  let options = event.target.foodOptions.value;
+  let price = event.target.price.value;
 
-    const addFood =new Food(id,foodName,options,price)
+  const addFood = new Food(id, foodName, options, price);
 
-    // addFood.render()
+  // addFood.render()
 
-    //save new food in local storage
-    saveData(allFood)
-
+  //save new food in local storage
+  saveData(allFood);
 }
 
 function saveData(data) {
-    let stringObject = JSON.stringify(data)
-    localStorage.setItem('foods',stringObject)
+  let stringObject = JSON.stringify(data);
+  localStorage.setItem("foods", stringObject);
 }
 // function getData(){
 
 //     let retarveData =localStorage.getItem('foods') //string data in LS
-//     let arrData=JSON.parse(retarveData) //object data in LS
-
+//     let arrData=JSON.parse(retarveData) //array data in LS
 
 //     if (arrData !== null){
 //         for (let i = 0; i < arrData.length; i++) {
