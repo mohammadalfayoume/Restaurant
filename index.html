@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="svg-container">
-        <!-- I crated SVG with: https://codepen.io/anthonydugois/pen/mewdyZ -->
         <svg viewbox="0 0 800 400" class="svg">
           <path id="curve" fill="#50c6d8" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
           </path>
@@ -19,10 +18,11 @@
       <header>
         <h1>Restaurant</h1>
         <h3>Here you are, scroll down.</h3>
-        <a class="about" href="./about.html">About Me</a>
+        <a class="about" href="./statistics.html">Statistics</a>
       </header>
     <main>
         <form class="form">
+            <input type="hidden" id="foodId">
             <label for="foodName">Food Name:</label>
             <input type="text" id="foodName">
             <br><br><br>
@@ -41,16 +41,17 @@
             <span>JD</span>
             <br><br><br>
             <input type="submit" id="submit" value="submit">
+            <input type="reset" id="reset" value="reset">
             <br>
         </form>
-        <table>
+        <!-- <table>
             <tr class="tableRow">
                 <th>Food ID</th>
                 <th>Food Name</th>
                 <th>Food Type</th>
                 <th>Food Price</th>
             </tr>
-        </table>
+        </table> -->
     </main>
     <hr>
 

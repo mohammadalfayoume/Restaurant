@@ -30,7 +30,7 @@ span {
     color: black;
 }
 
-#submit {
+#submit, #reset {
     border: 2px solid black;
     border-radius: 10px;
     padding: 3px 20px;
