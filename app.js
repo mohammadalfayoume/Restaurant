@@ -1,5 +1,5 @@
 let allFood = [];
-let count = 999;
+let count = 1000;
 
 function Food(foodId, foodName, foodType, foodPrice) {
   this.foodId = count++;
