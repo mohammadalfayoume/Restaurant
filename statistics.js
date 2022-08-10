@@ -1,3 +1,4 @@
+'use strict'
 let allFood = [];
 let count = 1000;
 
