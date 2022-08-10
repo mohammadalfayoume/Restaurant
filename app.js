@@ -1,3 +1,4 @@
+'use strict'
 let allFood = [];
 let count = 1000;
 
@@ -44,7 +45,12 @@ function handleSubmit(event) {
   let price = event.target.price.value;
 
   const addFood = new Food(id, foodName, options, price);
-
+  
+  window.scrollTo(
+    {
+        behavior: 'smooth',
+        top : 0
+    })
   // addFood.render()
 
   //save new food in local storage
